@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+  }
+}
+
+dependencies {
+  compileOnly rootProject.ext.conductor
+  compileOnly rootProject.ext.dagger
+  compileOnly rootProject.ext.daggerAndroid
+}
+
+apply from: rootProject.file('gradle/maven-push.gradle')

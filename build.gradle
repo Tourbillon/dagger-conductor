@@ -1,0 +1,33 @@
+buildscript {
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.0.1'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.60"
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+ext {
+  compileSdkVersion = 26
+  buildToolsVersion = '26.0.2'
+  minSdkVersion = 16
+  targetSdkVersion = 26
+
+  kotlinLib = 'org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.60'
+  conductor = 'com.bluelinelabs:conductor:2.1.4'
+  dagger = 'com.google.dagger:dagger:2.13'
+  daggerAndroid = 'com.google.dagger:dagger-android:2.13'
+}
