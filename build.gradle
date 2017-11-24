@@ -9,6 +9,10 @@ buildscript {
   }
 }
 
+plugins {
+  id "org.jetbrains.kotlin.kapt" version "1.1.4"
+}
+
 allprojects {
   repositories {
     google()
@@ -28,6 +32,13 @@ ext {
 
   kotlinLib = 'org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.60'
   conductor = 'com.bluelinelabs:conductor:2.1.4'
+  appcompatV7 = 'com.android.support:appcompat-v7:26.1.0'
+  supportDesign = 'com.android.support:design:26.1.0'
+
   dagger = 'com.google.dagger:dagger:2.13'
   daggerAndroid = 'com.google.dagger:dagger-android:2.13'
+  daggerCompiler = 'com.google.dagger:dagger-compiler:2.13'
+
+  butterKnife = 'com.jakewharton:butterknife:8.2.1'
+  butterKnifeCompiler = 'com.jakewharton:butterknife-compiler:8.2.1'
 }
