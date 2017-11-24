@@ -10,6 +10,11 @@ Usage
 * Replace `AndroidInjectionModule` with `ConductorInjectionModule` in `YourAppComponent`
 * Replace `AndroidInjection.inject(this)` with `ConductorInjection.inject(this)` in `Controller`
 
+Gradle
+=======
+
+	compile 'com.anbillon.dagger:dagger-conductor:1.0.0'
+
 
 License
 =======
